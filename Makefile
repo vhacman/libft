@@ -51,6 +51,10 @@ files = ft_memset\
 		ft_putstr\
 		ft_putendl\
 		ft_putnbr\
+		ft_putchar_fd\
+		ft_putstr_fd\
+		ft_putendl_fd\
+		ft_putnbr_fd\
 
 Compiler = gcc
 
