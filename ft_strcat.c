@@ -6,23 +6,23 @@
 
 char	*ft_strcat(char *dest, char *src)
 {
-	int	i; //dichiarato contatore per dest
-	int	j; //dichiarato contatore per src
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
-	while (dest[i] != '\0') //serve per trovare la fine di dest
+	while (dest[i] != '\0')
 	{
 		i++;
 	}
-	while (src[j] != '\0') // aggiungere src alla fine di dest
+	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
 		i++;
 		j++;
 	}
-	dest[i] = '\0'; //ci assicuriamo che dest abbia NULL alla fine
-	return (dest); //restituisce dest, che ora contiene anche src alla fine
+	dest[i] = '\0';
+	return (dest);
 }
 
 int	main(void)
