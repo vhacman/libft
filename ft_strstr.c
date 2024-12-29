@@ -4,9 +4,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
-//la funzione cerca SOLO la prima occorrenza della sottostringa all'interno della stringa
-//principale; restituisce anche il proseguimento della sottostringa che contiene il mio to_fin
-//Nel nostro caso se to_find[] = "ba", allora il result[] = "baleno".
+
 char	*ft_strstr(char *str, char *to_find)
 {
 	int	i;
@@ -27,7 +25,7 @@ char	*ft_strstr(char *str, char *to_find)
 	}	
 	return (0);
 }
-
+/*
 int	main(void)
 {
 	char	str[] = "arcobaleno";
@@ -39,3 +37,4 @@ int	main(void)
        		printf("Sottostringa non trovata.\n");
 	return (0);
 }
+*/
