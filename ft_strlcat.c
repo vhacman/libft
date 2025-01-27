@@ -1,9 +1,21 @@
-//HEADER
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/27 10:50:56 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/27 10:51:26 by vhacman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 /*
-The function concatenates the `src` string to the `dest` string with a maximum limit of `size` bytes,
-ensuring the result is always null-terminated (`\0`). It calculates how much space is available in `dest`.
-If `size` is too small, it returns the theoretical length without concatenating anything.
-The function copies characters from `src` to `dest`, respecting the limit of `size - 1`,
+The function concatenates the `src` string to the `dest` string with a maximum
+limit of `size` bytes, ensuring the result is always null-terminated (`\0`).
+It calculates how much space is available in `dest`.
+If `size` is too small, it returns the theoretical length
+without concatenating anything. The function copies characters
+from `src` to `dest`, respecting the limit of `size - 1`,
 and ensures that `dest` is always null-terminated.
 It returns the theoretical total length, which indicates how much 
 space would have been needed to fully concatenate `src`.

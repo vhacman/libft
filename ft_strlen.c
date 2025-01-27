@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/25 14:32:36 by vhacman           #+#    #+#             */
-/*   Updated: 2024/11/25 14:46:31 by vhacman          ###   ########.fr       */
+/*   Created: 2025/01/27 10:45:31 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/27 10:45:37 by vhacman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 

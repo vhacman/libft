@@ -1,5 +1,14 @@
-//header
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/27 10:45:13 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/27 10:45:16 by vhacman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 /*
 This function duplicates a string, verifying the source, allocating memory, 
 copying the content, and returning a pointer to the new string. 
