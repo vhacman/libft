@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 19:16:28 by vhacman           #+#    #+#             */
-/*   Updated: 2024/12/17 11:12:49 by vhacman          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include <unistd.h>
-#include <string.h>
+//header
+/*
+The `ft_strncpy` function copies up to `n` characters from a source string (`src`) to a destination string (`dest`):  
+- If `src` is shorter than `n`, the remaining space in `dest` is filled with null terminators (`\0`).  
+- If `src` is at least `n` characters long, the function does **not** guarantee a null terminator in `dest`.  
+*/
+#include "libft.h"
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
@@ -30,11 +23,3 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-/*
-int	main(void)
-{
-	char	dest[] = "say hello";
-	ft_strncpy(dest, "say hello", 3);
-	write(1, dest, 6);
-	return (0);
-}*/

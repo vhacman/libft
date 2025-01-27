@@ -1,20 +1,16 @@
 //HEADER
-//
-#include <unistd.h>
-#include <string.h>
-#include <stdio.h>
-int	ft_strlen(char *str)
-{
-	int	i;
+/*
+The function concatenates the `src` string to the `dest` string with a maximum limit of `size` bytes,
+ensuring the result is always null-terminated (`\0`). It calculates how much space is available in `dest`.
+If `size` is too small, it returns the theoretical length without concatenating anything.
+The function copies characters from `src` to `dest`, respecting the limit of `size - 1`,
+and ensures that `dest` is always null-terminated.
+It returns the theoretical total length, which indicates how much 
+space would have been needed to fully concatenate `src`.
+*/
+#include "libft.h"
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size)
 {
 	unsigned int	dest_len;
 	unsigned int	src_len;
@@ -31,18 +27,5 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 		i++;
 	}
 	dest[dest_len + i] = '\0';
-	return (dest_len + src_len); //restituisce la lunghezza teorica
+	return (dest_len + src_len);
 }
-/*
-int	main(void)
-{
-	char	dest[40] = "Hello_";
-	char	src[] = "World!";
-	unsigned int	size = 15;
-	unsigned int	result = ft_strlcat(dest, src, size);
-
-	printf("Resulting string: '%s'\n", dest); // %s --> specifica che il parametro successivo è una stringa (char *) - gli apici singoli '%s' --> servono per incorniciare la stringa, rendendola piu leggibile e mostrando gli eventuali spazi vuoti.
-	printf("Theoretical length: %u\n", result); // %u --> il parametro successivo è un numero intero senza segno (unsigned int)
-	return (0);
-}
-*/

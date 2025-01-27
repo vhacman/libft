@@ -10,11 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int	i;
 
@@ -25,13 +23,3 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
-/*
-int	main(int argc, char **argv)
-{
-	if (argc == 2)
-	{
-		int len = ft_strlen(argv[1]);
-		printf("La lunghezza della stringa e': %d\n", len);
-	}
-	return (0);
-}*/

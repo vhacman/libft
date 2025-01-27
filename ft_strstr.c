@@ -1,18 +1,22 @@
 // HEADER
 
-
-#include <unistd.h>
-#include <string.h>
-#include <stdio.h>
+/*
+The `ft_strstr` function performs a substring search within a string. 
+It returns a pointer to the first occurrence of the substring `to_find` within the main string `str`, 
+or `NULL` if the substring is not found. The function correctly handles the case where the substring is empty, 
+returning the main string directly. If the substring is found, 
+it returns a pointer to the starting position of the match. If the substring is not found, it returns `NULL`.
+*/
+#include "libft.h"
 
 char	*ft_strstr(char *str, char *to_find)
 {
 	int	i;
 
 	i = 0;
-	if (!*to_find) // if (to_find[i] != '\0')
+	if (!*to_find)
 		return (str);
-	while (*str) // while (str[i] != '\0')
+	while (*str)
 	{
 		i = 0;
 		while (to_find[i] && str[i] && str[i] == to_find[i])
@@ -25,16 +29,3 @@ char	*ft_strstr(char *str, char *to_find)
 	}	
 	return (0);
 }
-/*
-int	main(void)
-{
-	char	str[] = "arcobaleno";
-	char	to_find[] = "ba";
-	char	*result = ft_strstr(str, to_find);
-	if (result)
-        	printf("Risultato: %s\n", result);
-    	else
-       		printf("Sottostringa non trovata.\n");
-	return (0);
-}
-*/

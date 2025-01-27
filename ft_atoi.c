@@ -10,11 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <string.h>
-#include <stdio.h>
+/*
+The function converts a string representing a number into an integer (int), handling any initial spaces, signs, and numeric digits.  
+- The function ignores whitespace and control characters (i.e., from ASCII 9 to 13).  
+- It handles the `+` or `-` signs: if it encounters a minus sign, it inverts the `sign` variable from 1 to -1 or vice versa.  
+- It ignores the `+` sign without making any changes.  
+- It converts only consecutive digits and stops at the first non-numeric character.  
+- It returns the converted number as an integer.
+*/
+#include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	sign;
@@ -38,13 +44,3 @@ int	ft_atoi(char *str)
 	}
 	return (result * sign);
 }
-/*
-int main(int argc, char **argv)
-{
-	if (argc == 2)
-	{
-		int	result = ft_atoi(argv[1]);
-		printf("The integer value is: %d\n", result);
-	}
-	return 0;
-}*/

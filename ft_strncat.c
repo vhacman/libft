@@ -1,10 +1,11 @@
 //HEADER
-//
-
-
-#include <string.h>
-#include <unistd.h>
-#include <stdio.h>
+/*
+The function concatenates at most `nb` characters from the `src` string to the end of the `dest` string,
+ensuring that `dest` is always null-terminated (`\0`). It locates the end of `dest`, then copies up to `nb`
+characters from `src` to `dest`.
+The function guarantees that `dest` ends with a null character and returns a pointer to `dest`.
+*/
+#include "libft.h"
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
@@ -27,12 +28,3 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	dest[i] = '\0';
 	return (dest);
 }
-
-int	main(void)
-{
-	char	dest[20] = "madonna_che";
-	char	src[] = "_fame";
-	printf("%s\n", ft_strncat(dest, src, 11));
-	return (0);	
-}
-

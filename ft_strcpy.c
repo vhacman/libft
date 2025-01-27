@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/14 18:32:46 by vhacman           #+#    #+#             */
-/*   Updated: 2024/11/19 16:26:02 by vhacman          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include <unistd.h>
-#include <string.h>
+//header
+/*
+The `strcpy` function copies a source string into a destination, including the null terminator (`\0`).
+It requires the destination to have sufficient space.
+This function is useful when working with preallocated buffers and the sizes involved are known.
+*/
+#include "libft.h"
 
 char	*ft_strcpy(char *dest, char *src)
 {
@@ -26,11 +19,3 @@ char	*ft_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-int	main(void)
-{
-	char	dest[12];
-	ft_strcpy(dest, "Hello, World");
-	write(1, dest, 12);
-	return(0);
-}*/

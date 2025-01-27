@@ -1,31 +1,18 @@
 //HEADER DA INSERIRE
-//
+/*
+The ft_strcmp function compares two strings character by character.
+It returns the difference between the ASCII values of the first differing characters.
+The function is robust and efficient but requires both strings 
+to be properly null-terminated (\0) to avoid undefined behavior.
+*/
+#include "libft.h"
 
-
-
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-
-int	ft_strcmp(char *s1, char *s2)
+int		ft_strcmp(const char *s1, const char *s2)
 {
-	int	i;
+	size_t i;
 
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
-	{
+	while ((s1[i] == s2[i]) && (s1[i] != '\0') && (s2[i] != '\0'))
 		i++;
-	}
-	return (s1[i] - s2[i]);
-}
-// return (0); --> s1 = s2;
-// return (negativo) --> s1 < s2;
-// return (positivo) --> s1 > s2;
-int	main(void)
-{
-	char s1[] = "cacca";
-	char s2[] = "cacca";
-	printf("%d\n", ft_strcmp(s1, s2));
-	return (0);
-
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

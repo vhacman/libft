@@ -1,41 +1,26 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/25 14:47:34 by vhacman           #+#    #+#             */
-/*   Updated: 2024/11/25 15:12:12 by vhacman          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+//HEADER
 
-#include <unistd.h>
-#include <string.h>
-#include <stdio.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-void	ft_putstr(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		ft_putchar(str[i]);
-		i++;
-	}
-}
 /*
-int	main(int argc, char **argv)
+The function prints a string (`char *s`) to the standard output, character by character. 
+It accepts a pointer to a null-terminated string (`\0`). 
+Before proceeding, it ensures the pointer is not `NULL` to avoid undefined behavior; if it is, 
+the function does nothing. An integer variable `i` is initialized to 0 to serve as an index 
+for accessing the characters of the string. 
+A `while` loop is used to iterate through the string, and it stops when the null terminator is encountered.
+*/
+#include "libft.h"
+
+void	ft_putstr(char *s)
 {
-	if (argc == 2)
+	int i;
+
+	if (s != NULL)
 	{
-		ft_putstr(argv[1]);
+		i = 0;
+		while (s[i])
+		{
+			ft_putchar(s[i]);
+			i++;
+		}
 	}
-	return (0);
-}*/
+}
