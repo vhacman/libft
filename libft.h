@@ -6,7 +6,7 @@
 /*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 12:35:47 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/27 14:02:40 by vhacman          ###   ########.fr       */
+/*   Updated: 2025/01/27 16:16:10 by vhacman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,6 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strstr(char *str, char *to_find);
 size_t	ft_strlen(const char *str);
 int		ft_atoi(const char *str);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 #endif
