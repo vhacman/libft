@@ -18,7 +18,7 @@ buffers and the sizes involved are known.
 */
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	int	i;
 

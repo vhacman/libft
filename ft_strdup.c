@@ -16,6 +16,8 @@ If memory allocation fails or the source is null, it returns NULL.
 Called “ft_strdup,” it uses ft_strlen and ft_strcpy.
 */
 #include "libft.h"
+#include <unistd.h>
+#include <string.h>
 
 char	*ft_strdup(const char *s1)
 {
@@ -31,3 +33,21 @@ char	*ft_strdup(const char *s1)
 	ft_strcpy(s2, s1);
 	return (s2);
 }
+/*
+int	main(void)
+{
+	char	*original;
+	char	*duplicate;
+
+	original = "Hello, 42!";
+	duplicate = ft_strdup(original);
+	if (duplicate)
+	{
+		printf("Original String: %s\n", original);
+		printf("Duplicate String: %s\n", duplicate);
+		free(duplicate);
+	}
+	else
+		printf("Error, malloc has failed.\n");
+	return(0);
+}*/

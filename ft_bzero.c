@@ -26,3 +26,27 @@ void	ft_bzero(void *s, size_t n)
 		--n;
 	}
 }
+/*
+int	main(void)
+{
+	char	str[10] = "Hello 42";
+	char	*p;
+
+	//str[10] = "Hello42";
+	p = str;
+	printf("Before ft_bzero: \"%s\"\n", str);
+	ft_bzero(str, 5);
+	printf("After ft_bzero: \"");
+	while (*p)
+	{
+		printf("%c", *p);
+		p++;
+	}
+	while (p < str + 10)
+	{
+		printf("\\0");
+		p++;
+	}
+	printf("\"\n");
+	return (0);
+}*/
