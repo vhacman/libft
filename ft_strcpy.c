@@ -31,3 +31,13 @@ char	*ft_strcpy(char *dest, const char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+/*
+int	main(void)
+{
+	const char	src[] = "Hello, 42!";
+	char		dest[20];
+	printf("Stringa originale (src): \"%s\"\n", src);
+	ft_strcpy(dest, src);
+	printf("Stringa copiata(dest): \"%s\"\n", dest);
+	return (0);
+}*/

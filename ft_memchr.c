@@ -13,7 +13,6 @@
 (s) with a maximum length (n). Returns a pointer to the first matching byte
 or NULL if the byte is not found. The search is performed byte by byte
 and uses a cast to unsigned char to ensure correctness.*/
-#include "libft.h"
 
 #include "libft.h"
 
@@ -34,3 +33,23 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+/*
+int	main(void)
+{
+	const char	str[] = "Hello, 42!";
+	char		c;
+	size_t		n;
+	char		*result;
+
+//	str = "Hello, 42!";
+	c = 'o';
+	n = 10;
+	printf("Original String: \"%s\"n", str);
+	printf("Char to find: '%c', Number of bytes: %zu\n", c, n);
+	result = (char *)ft_memchr(str, c, n);
+	if (result)
+		printf("Char found in position: %ld\n", result - str);
+	else
+		printf("Char not found in the first: %zu byte.\n", n);
+	return (0);
+}*/

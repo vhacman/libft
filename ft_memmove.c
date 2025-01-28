@@ -18,20 +18,22 @@ end of the destination area.*/
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char	*d;
-	char	*s;
-	size_t	i;
+	unsigned char			*d;
+	const unsigned char		*s;
+	unsigned char			i;
 
-	s = (char *)src;
-	d = (char *)dest;
-	i = 0;
 	if (!dest && !src)
 		return (NULL);
+	s = (const unsigned char *)src;
+	d = (unsigned char *)dest;
 	if (d > s)
+	{
 		while (n-- > 0)
 			d[n] = s[n];
+	}
 	else
 	{
+		i = 0;
 		while (i < n)
 		{
 			d[i] = s[i];
@@ -40,3 +42,21 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/*
+int	main(void)
+{
+	char	str1[] = "Hello, World!";
+	char	overlap_dest[] = "OverlapTest";
+
+	// Caso 1: Nessuna sovrapposizione
+	printf("Caso 1: Nessuna sovrapposizione\n");
+	printf("Prima di ft_memmove: str1 = \"%s\"\n", str1);
+	ft_memmove(str1 + 7, str1, 5);
+	printf("Dopo ft_memmove: str1 = \"%s\"\n", str1);
+	// Caso 2: Sovrapposizione (da destra a sinistra)
+	printf("\nCaso 2: Sovrapposizione (da destra a sinistra)\n");
+	printf("Prima di ft_memmove: overlap_dest = \"%s\"\n", overlap_dest);
+	ft_memmove(overlap_dest + 3, overlap_dest, 7);
+	printf("Dopo ft_memmove: overlap_dest = \"%s\"\n", overlap_dest);
+	return (0);
+}*/

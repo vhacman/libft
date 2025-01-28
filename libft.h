@@ -33,7 +33,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 char	*ft_strdup(const char *s1);
 char	*ft_strcat(char *s1, const char *s2);
 char	*ft_strncat(char *dest, char *src, unsigned int nb);
-size_t	ft_strlcat(char *dest, const char *src, unsigned int size);
+size_t	ft_strlcat(char *dest, const char *src, size_t destsize);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strstr(char *str, char *to_find);
@@ -44,4 +44,5 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
+int		ft_isprint(int c);
 #endif

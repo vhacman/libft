@@ -17,9 +17,26 @@ is not found. If C is the termiantor, it returns a pointer to it */
 
 char	*ft_strchr(const char *s, int c)
 {
-	while ((s != '/0') && (*s != c))
+	while ((*s) && (*s != c))
 		s++;
 	if (*s == c)
 		return ((char *)s);
 	return (NULL);
 }
+/*
+int	main(void)
+{
+	const char	str[] = "Hello, 42!";
+	char		c;
+	char		*result;
+
+	c = 'o';
+	printf("Original string: \"%s\"\n", str);
+	printf("Character to find: '%c'\n", c);
+	result = ft_strchr(str, c);
+	if (result)
+		printf("Character found at position: %ld\n", result - str);
+	else
+		printf("Character not found in the string.\n");
+	return (0);
+}*/

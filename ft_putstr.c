@@ -32,3 +32,20 @@ void	ft_putstr(char *s)
 		}
 	}
 }
+/*
+int	main(void)
+{
+	char	str1[] = "Hello, 42!";
+	char	str2[] = ""; // Stringa vuota
+	char	*str3 = NULL; // Puntatore nullo
+	write(1, "Test 1: ", 8);
+	ft_putstr(str1);
+	write(1, "\n", 1);
+	write(1, "Test 2: ", 8);
+	ft_putstr(str2);
+	write(1, "\n", 1);
+	write(1, "Test 3: ", 8);
+	ft_putstr(str3);
+	write(1, "\n", 1);
+	return (0);
+}*/
