@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 12:29:10 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/27 12:29:32 by vhacman          ###   ########.fr       */
+/*   Created: 2025/01/28 17:26:59 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/28 17:34:42 by vhacman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+int	ft_toupper(int c)
 {
-	size_t	i;
+	if ('a' <= c && c <= 'z')
+		return (c - 32);
+	else
+		return (c);
+}
 
-	i = 0;
-	if (size > 0)
-	{
-		while (src[i] && i < (size - 1))
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = 0;
-	}
-	while (src[i])
-		i++;
-	return (i);
+int	main(void)
+{
+	ft_putchar_fd(ft_toupper('a'), 1);
+	ft_putchar_fd('\n', 1);
+	ft_putchar_fd(ft_toupper('u'), 1);
+	ft_putchar_fd('\n', 1);
+	ft_putchar_fd(ft_toupper('A'), 1);
+	ft_putchar_fd('\n', 1);
+	ft_putchar_fd(ft_toupper('5'), 1);
+	ft_putchar_fd('\n', 1);
 }
