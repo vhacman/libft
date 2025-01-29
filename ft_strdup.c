@@ -16,8 +16,6 @@ If memory allocation fails or the source is null, it returns NULL.
 Called “ft_strdup,” it uses ft_strlen and ft_strcpy.
 */
 #include "libft.h"
-#include <unistd.h>
-#include <string.h>
 
 char	*ft_strdup(const char *s1)
 {
@@ -26,8 +24,10 @@ char	*ft_strdup(const char *s1)
 
 	if (!s1)
 		return (NULL);
-	len = ft_strlen(s1) + 1;
-	s2 = (char *)malloc(sizeof(char) * len);
+	len = ft_strlen(s1);
+	if (len + 1 == 0)
+		return (NULL);
+	s2 = (char *)malloc(sizeof(char) * len + 1);
 	if (!s2)
 		return (NULL);
 	ft_strcpy(s2, s1);
@@ -36,18 +36,21 @@ char	*ft_strdup(const char *s1)
 /*
 int	main(void)
 {
-	char	*original;
-	char	*duplicate;
+    // Caso 1: Stringa normale
+    char	str1[] = "42 Network";
+    char	*copy1 = ft_strdup(str1);
+    printf("Originale: %s | Copia: %s\n", str1, copy1);
+    free(copy1);
 
-	original = "Hello, 42!";
-	duplicate = ft_strdup(original);
-	if (duplicate)
-	{
-		printf("Original String: %s\n", original);
-		printf("Duplicate String: %s\n", duplicate);
-		free(duplicate);
-	}
-	else
-		printf("Error, malloc has failed.\n");
-	return(0);
+    // Caso 2: Stringa vuota
+    char	str2[] = "";
+    char	*copy2 = ft_strdup(str2);
+    printf("Stringa vuota: '%s'\n", copy2);
+    free(copy2);
+
+    // Caso 3: NULL (deve restituire NULL)
+    char	*copy3 = ft_strdup(NULL);
+    printf("NULL: %p\n", (void *)copy3);
+
+    return (0);
 }*/
