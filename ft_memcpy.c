@@ -31,3 +31,14 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/*
+int	main(void)
+{
+	char	src[] = "Hello, World!";
+	char	dest[20];
+
+	printf("Before ft_memcpy: %s\n", dest);
+	ft_memcpy(dest, src, ft_strlen(src) + 1);
+	printf("After ft_memcpy: %s\n", dest);
+	return (0);
+}*/
