@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 10:42:06 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/27 11:59:49 by vhacman          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 /*The function prints a string (`char *s`) to the standard output,
  character by character.It accepts a pointer to a null-terminated string (`\0`). 
 Before proceeding, it ensures the pointer is not `NULL`

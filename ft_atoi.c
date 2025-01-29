@@ -1,14 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 10:13:39 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/27 12:31:54 by vhacman          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+
 /*The function converts a string representing a number into an integer (int),
 handling any initial spaces, signs, and numeric digits.The function ignores
 whitespace and control characters (i.e., from ASCII 9 to 13).It handles the

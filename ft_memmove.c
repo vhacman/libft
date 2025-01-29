@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 10:37:19 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/27 11:30:20 by vhacman          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 /*Used to copy a block of memory from one location to another. It is designed
 to safely copy a sequence of bytes from `src` to `dest`, even when the memory
 areas overlap. When the areas overlap and `dest > src`,

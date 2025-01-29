@@ -1,20 +1,7 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 10:45:13 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/27 10:45:16 by vhacman          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-/*
-This function duplicates a string, verifying the source, allocating memory, 
+/*This function duplicates a string, verifying the source, allocating memory, 
 copying the content, and returning a pointer to the new string. 
 If memory allocation fails or the source is null, it returns NULL. 
-Called “ft_strdup,” it uses ft_strlen and ft_strcpy.
-*/
+Called “ft_strdup,” it uses ft_strlen and ft_strcpy.*/
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)

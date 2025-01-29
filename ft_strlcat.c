@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 10:50:56 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/27 10:51:26 by vhacman          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 /* The ft_strlcat function appends the src string to the dest string while
 ensuring the total size does not exceed destsize, including the null-terminator
 It calculates the initial length of dest, checks if there’s enough space to

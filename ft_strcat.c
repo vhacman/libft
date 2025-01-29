@@ -1,17 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 10:44:48 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/29 17:11:09 by marvin           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-/*
-The `ft_strcat` function concatenates two strings by copying the
+/*The `ft_strcat` function concatenates two strings by copying the
 characters of `s2` to the end of `s1`. It requires `s1` to have
 enough allocated space to hold both strings and `s2` to be
 a valid null-terminated string (`\0`). The concatenation is performed 

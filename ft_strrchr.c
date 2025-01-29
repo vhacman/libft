@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 15:59:02 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/27 16:08:57 by vhacman          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 /*the function searches for the last occurance of the char C in the string S
 It returns a pointer to the position of the last occurance of the char
 in the string. If the char is not found it returns NULL. The null terminator
