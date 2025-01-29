@@ -34,3 +34,12 @@ void	*ft_memset(void *b, int c, size_t count)
 	}
 	return (b);
 }
+/*
+int	main(void)
+{
+	char	str[10] = "Hello!";
+	printf("Before ft_memset: %s\n", str);
+	ft_memset(str, '*', 3);
+	printf("After ft_memset: %s\n", str);
+	return (0);
+}*/
