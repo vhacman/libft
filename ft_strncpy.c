@@ -3,25 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 10:39:49 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/27 10:48:37 by vhacman          ###   ########.fr       */
+/*   Updated: 2025/01/29 18:06:48 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-The `ft_strncpy` function copies up to `n` characters
-from a source string (`src`) to a destination string (`dest`):  
-- If `src` is shorter than `n`, the remaining space in `dest` is
-filled with null terminators (`\0`).  
-- If `src` is at least `n` characters long, the function does 
- **not** guarantee a null terminator in `dest`.  
-*/
+
 #include "libft.h"
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+char	*ft_strncpy(char *dest, char *src, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	while (src[i] != '\0' && i < n)
@@ -36,3 +29,18 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
+/*
+int	main()
+{
+    char	src[] = "Hello!";
+    char	dest1[10];
+    char	dest2[10];
+
+    ft_strncpy(dest1, src, 3); // Copia solo "Hel"
+    ft_strncpy(dest2, src, 10); // Copia tutto e aggiunge '\0'
+
+    printf("Copia parziale: %s\n", dest1);
+    printf("Copia completa: %s\n", dest2);
+
+    return 0;
+}*/
