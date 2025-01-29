@@ -34,22 +34,14 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 /*
-int	main(void)
+int	 main(void)
 {
-	const char	str[] = "Hello, 42!";
-	char		c;
-	size_t		n;
-	char		*result;
+    char	str[] = "Hello, World!";
+    char	*result = ft_memchr(str, 'W', 13); // Cerca 'W' nei primi 13 byte
+    if (result != NULL)
+        printf("Carattere trovato: %s\n", result);
+    else
+        printf("Carattere non trovato!\n");
 
-//	str = "Hello, 42!";
-	c = 'o';
-	n = 10;
-	printf("Original String: \"%s\"n", str);
-	printf("Char to find: '%c', Number of bytes: %zu\n", c, n);
-	result = (char *)ft_memchr(str, c, n);
-	if (result)
-		printf("Char found in position: %ld\n", result - str);
-	else
-		printf("Char not found in the first: %zu byte.\n", n);
-	return (0);
+    return 0;
 }*/

@@ -32,3 +32,14 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+/*
+int	main(void)
+{
+	char	str1[] = "Hello, World!";
+	char	str2[] = "Hello, World!";
+	char	str3[] = "Hello, un cavolo";
+
+	printf("Confronto str1 e str2: %d\n", ft_memcmp(str1, str2, 13));
+	printf("Confronto str1 e str3: %d\n", ft_memcmp(str1, str3, 13));
+	return (0);
+}*/

@@ -53,6 +53,7 @@ int	main(void)
 	printf("Prima di ft_memmove: str1 = \"%s\"\n", str1);
 	ft_memmove(str1 + 7, str1, 5);
 	printf("Dopo ft_memmove: str1 = \"%s\"\n", str1);
+	
 	// Caso 2: Sovrapposizione (da destra a sinistra)
 	printf("\nCaso 2: Sovrapposizione (da destra a sinistra)\n");
 	printf("Prima di ft_memmove: overlap_dest = \"%s\"\n", overlap_dest);

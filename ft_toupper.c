@@ -19,7 +19,7 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
+/*
 int	main(void)
 {
 	ft_putchar_fd(ft_toupper('a'), 1);
@@ -30,4 +30,4 @@ int	main(void)
 	ft_putchar_fd('\n', 1);
 	ft_putchar_fd(ft_toupper('5'), 1);
 	ft_putchar_fd('\n', 1);
-}
+}*/
