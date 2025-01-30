@@ -1,4 +1,15 @@
-//header
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vhacman <marvin@student.42.fr>              +#+  +:+       +#+       */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/30 17:24:54 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/30 17:24:54 by vhacman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*Used to extract a substring from a given string.
 s: The string from which the substring will be created.
 start: The starting index of the substring.
@@ -9,7 +20,7 @@ len: The maximum length of the substring.*/
 char    *ft_substr(char const *s, unsigned int start, size_t len)
 {
         if (!s)
-                return(NULL);
+                return (NULL);
         size_t str_len;
 
         str_len = ft_strlen(s);
@@ -20,10 +31,10 @@ char    *ft_substr(char const *s, unsigned int start, size_t len)
         copy_len = len;
         if (start + len > str_len)
                 copy_len = str_len - start;
-        char    *sub_str = (char *)malloc(copy_len + 1);
+        char *sub_str = (char *)malloc(copy_len + 1);
         if (!sub_str)
                 return (NULL);
-        size_t  i;
+        size_t i;
         i = 0;
         while (i < copy_len)
         {
@@ -36,15 +47,15 @@ char    *ft_substr(char const *s, unsigned int start, size_t len)
 /*
 int     main(void)
 {
-    const char  *str = "Hello, World!";
-    char        *sub = ft_substr(str, 7, 5);
+        const char  *str = "Hello, World!";
+        char        *sub = ft_substr(str, 7, 5);
 
-    if (sub) 
-    {
-        printf("Substring: %s\n", sub);
-        free(sub);
-    } 
-    else
-        printf("Memory allocation failed\n");
-    return (0);
+        if (sub)
+        {
+                printf("Substring: %s\n", sub);
+                free(sub);
+        }
+        else
+                printf("Memory allocation failed\n");
+        return (0);
 }*/
