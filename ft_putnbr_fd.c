@@ -25,11 +25,11 @@ void    ft_putnbr_fd(int n, int fd)
         c = (n % 10) + '0';
         write (fd, &c, 1);
 }
-
+/*
 int     main(void)
 {
     int number = -12345;
     ft_putnbr_fd(number, 1);
     write(1, "\n", 1);
     return (0);
-}
+}*/
