@@ -1,8 +1,17 @@
-//header
-/*writes an int to a specified file descriptor. This type of 
-function is useful when you want to output a number to a 
-file or other output devices (like a screen or network),
-without necessarily using printf or other standard 
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vhacman <vhacman@student.42roma.it>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/30 20:14:20 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/30 20:14:20 by vhacman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+/*writes an int to a specified file descriptor. This type of function is useful 
+when you want to output a number to a file or other output devices
+(like a screen or network),without necessarily using printf or other standard 
 library functions*/
 
 #include "libft.h"

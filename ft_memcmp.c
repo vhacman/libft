@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vhacman <vhacman@student.42roma.it>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/30 20:13:17 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/30 20:13:17 by vhacman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 /* @s1: Primo blocco di memoria. @s2: Secondo blocco di memoria.
 @n: Numero massimo di byte da confrontare. Restituisce: Un valore negativo 
 se s1 < s2. - 0 se s1 == s2. - Un valore positivo se s1 > s2. */

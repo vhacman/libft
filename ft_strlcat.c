@@ -1,8 +1,14 @@
-/* The ft_strlcat function appends the src string to the dest string while
-ensuring the total size does not exceed destsize, including the null-terminator
-It calculates the initial length of dest, checks if there’s enough space to
-concatenate, and then appends as much of src as possible without exceeding 
-the buffer limit.*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vhacman <vhacman@student.42roma.it>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/30 20:15:35 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/30 20:15:50 by vhacman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

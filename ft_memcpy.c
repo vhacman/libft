@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vhacman <vhacman@student.42roma.it>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/30 20:13:34 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/30 20:13:34 by vhacman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 /*The function copies exactly `n` bytes from the source memory `src` to the
 destination memory `dest`. It does not handle overlapping memory areas,
 unlike `memmove`.It returns a pointer to the destination memory `dest`.  

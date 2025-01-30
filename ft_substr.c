@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vhacman <marvin@student.42.fr>              +#+  +:+       +#+       */
+/*   By: vhacman <vhacman@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/30 17:24:54 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/30 17:24:54 by vhacman          ###   ########.fr       */
+/*   Created: 2025/01/30 20:09:57 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/30 20:09:57 by vhacman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 /*Used to extract a substring from a given string.
 s: The string from which the substring will be created.
 start: The starting index of the substring.

@@ -1,7 +1,14 @@
-/*the function searches for the last occurance of the char C in the string S
-It returns a pointer to the position of the last occurance of the char
-in the string. If the char is not found it returns NULL. The null terminator
-of the string is also considered part of the string and can be searched for.*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vhacman <vhacman@student.42roma.it>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/30 20:16:53 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/30 20:17:02 by vhacman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 

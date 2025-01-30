@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vhacman <vhacman@student.42roma.it>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/30 20:12:52 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/30 20:12:52 by vhacman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 /*Searches for the first occurrence of a specific byte (c) in a memory block
 (s) with a maximum length (n). Returns a pointer to the first matching byte
 or NULL if the byte is not found. The search is performed byte by byte

@@ -1,6 +1,14 @@
-/* searches for the first occurence of a character C in string S.
-It returns a pointer to the matched charachter if found, or NULL if the char
-is not found. If C is the termiantor, it returns a pointer to it */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vhacman <vhacman@student.42roma.it>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/30 20:15:02 by vhacman           #+#    #+#             */
+/*   Updated: 2025/01/30 20:15:17 by vhacman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
