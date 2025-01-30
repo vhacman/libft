@@ -17,7 +17,7 @@ memory allocation failure.*/
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int		i;
 	char				*str;
