@@ -46,8 +46,12 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+<<<<<<< Updated upstream
 char	**ft_split(char const *s, char c);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	*ft_calloc(size_t number, size_t size);
 char    *ft_strmapi(char const *s, (*f)(unsigned int, char));
+=======
+char	*ft_strjoin(char const *s1, char const *s2);
+>>>>>>> Stashed changes
 #endif
