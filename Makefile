@@ -12,6 +12,7 @@ FILES = ft_atoi\
 	ft_isalpha\
 	ft_isdigit\
 	ft_isprint\
+	ft_isascii\
 	ft_itoa\
 	ft_memchr\
 	ft_memcmp\

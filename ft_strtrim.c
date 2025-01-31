@@ -12,45 +12,39 @@
 
 #include "libft.h"
 
+bool	is_in_string(char c, char const *str)
+{
+	while (*str)
+	{
+		if (*str == c)
+			return (true);
+		str++;
+	}
+	return (false);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		start;
-	int		end;
-	char	*str;
+	int		i;
+	int		j;
+	int		k;
+	char	*buffer;
 
 	if (!s1 || !set)
 		return (NULL);
-	start = 0;
-	end = ft_strlen(s1) - 1;
-	while (ft_strchr(set, s1[start]) && start <= end)
-		start++;
-	if (start > end)
-		return (ft_strdup(""));
-	while (ft_strchr(set, s1[end]) && end >= 0)
-		end--;
-	str = malloc(end - start + 2);
-	if (!str)
+	i = 0;
+	j = 0;
+	while (s1[j] && is_in_string(s1[j], set))
+		j++;
+	k = ft_strlen((char *) s1);
+	while (k > j && is_in_string(s1[k - 1], set))
+		k--;
+	buffer = (char *) malloc(sizeof(*s1) * (k - j + 1));
+	if (!buffer)
 		return (NULL);
-	ft_strlcpy(str, &s1[start], end - start + 2);
-	return (str);
+	i = 0;
+	while (j < k)
+		buffer[i++] = s1[j++];
+	buffer[i] = 0;
+	return ((char *)buffer);
 }
-/*
-int	main(void)
-{
-	char	*s1 = "   hello world!   ";
-	char	*set = " ";
-	char	*trimmed;
-   
-	trimmed = ft_strtrim(s1, set);
-	if (trimmed)
-	{
-		printf("Original: '%s'\n", s1);
-		printf("Trimmed: '%s'\n", trimmed);
-		free(trimmed);
-	}
-	else
-	{	
-		printf("Memory allocation failed.\n");
-	}
-	return 0;
-}*/

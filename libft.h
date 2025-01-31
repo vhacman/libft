@@ -6,18 +6,18 @@
 /*   By: vhacman <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 12:35:47 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/27 16:16:10 by vhacman          ###   ########.fr       */
+/*   Updated: 2025/01/31 14:15:00 by vhacman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
-# include <stddef.h>
 # include <stdlib.h>
+# include <stdbool.h>
 # include <unistd.h>
-# include <stdio.h>
 # include <limits.h>
+# include <stddef.h>
+# include <stdint.h>
 
 int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
@@ -52,4 +52,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	*ft_calloc(size_t number, size_t size);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 #endif

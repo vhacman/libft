@@ -6,7 +6,7 @@
 /*   By: vhacman <vhacman@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 20:09:57 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/30 20:09:57 by vhacman          ###   ########.fr       */
+/*   Updated: 2025/01/31 14:12:50 by vhacman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Used to extract a substring from a given string.
@@ -27,7 +27,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	str_len = ft_strlen(s);
 	if (start >= str_len)
-		return (ft_strdup(" "));
+		return (ft_strdup(""));
 	if (start + len > str_len)
 		copy_len = str_len - start;
 	else

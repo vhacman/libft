@@ -9,61 +9,69 @@
 /*   Updated: 2025/01/30 20:12:35 by vhacman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/* used to convert an int to a string /int len = (n <= 0) ? 1 : 0;*/
+
 #include "libft.h"
-
-static int	ft_get_num_len(int n)
+/*calcola la lunghezza necessaria per rappresentare un numero n in una data
+base. */
+static int	ft_length(int n, int base)
 {
-	int	len;
+	int	count;
 
+	count = 0;
 	if (n <= 0)
-		len = 1;
-	else
-		len = 0;
-	while (n)
-	{
-		len++;
-		n /= 10;
-	}
-	return (len);
+		++count;
+	while (n && ++count)
+		n /= base;
+	return (count);
 }
 
-char	*ft_itoa(int n)
+/*converte un numero intero in una stringa (char *)
+La funzione ft_itoa lavora in base 10, il che 
+significa che ogni cifra del numero può essere estratta con l'operazione 
+di modulo (% 10).La funzione utilizza malloc per allocare la memoria 
+necessaria per contenere la stringa, per sapere quanta memoria 
+e' necessaria si usa ft_length. Il numero viene convertito dalla 
+cifra meno significativa alla più significativa.
+Poiché le stringhe in C sono memorizzate da sinistra a destra, l’array
+viene riempito da destra a sinistra.
+*/
+char	*ft_itoa(int nb)
 {
-	int		len;
-	char	*str;
-	long	num;
+	int			len;
+	char		*str;
+	const char	*digits = "0123456789";
 
-	len = ft_get_num_len(n);
-	str = (char *)malloc(sizeof(char *) * (len + 1));
+	len = ft_length(nb, 10);
+	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
-		return (NULL);
-	str[len] = '\0';
-	num = n;
-	if (num < 0)
-	{
+		return (0);
+	str[len] = 0;
+	if (nb == 0)
+		str[0] = '0';
+	if (nb < 0)
 		str[0] = '-';
-		num = -num;
-	}
-	while (len-- && str[len] != '-')
+	while (nb)
 	{
-		str[len] = (num % 10) + '0';
-		num /= 10;
+		if (nb > 0)
+			str[--len] = digits[nb % 10];
+		else
+			str[--len] = digits[nb % 10 * -1];
+		nb /= 10;
 	}
 	return (str);
 }
 /*
 int     main(void)
 {
-    int test[] = {0, -123, 456, -2147483648, 2147483647};
-    int i = 0;
-    
-    while (i < 5)
-    {
-        char *str = ft_itoa(test[i]);
-        printf("ft_itoa(%d) = %s\n", test[i], str);
-        free(str);
-        i++;
-    }
-    return (0);
+	int test[] = {0, -123, 456, -2147483648, 2147483647};
+	int i = 0;
+	
+	while (i < 5)
+	{
+		char *str = ft_itoa(test[i]);
+		printf("ft_itoa(%d) = %s\n", test[i], str);
+		free(str);
+		i++;
+	}
+	return (0);
 }*/
