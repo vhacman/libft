@@ -1,44 +1,63 @@
-# Name of the static library
-Library = libft
+NAME = libft.a
 
-# List of source files (no need to include the .c extensions here)
-files = ft_atoi ft_bzero ft_isalnum ft_isdigit ft_isascii ft_isalpha ft_isprint ft_itoa ft_memchr ft_memcmp ft_memcpy ft_memmove ft_memset ft_putchar_fd \
-        ft_putendl_fd ft_putnbr_fd ft_putstr_fd ft_strchr ft_strdup ft_strlcat ft_strlcpy ft_strlen ft_strncmp ft_strnstr ft_strrchr ft_tolower \
-        ft_toupper ft_calloc ft_substr ft_strjoin ft_strtrim ft_split ft_strmapi ft_striteri
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+AR = ar rcs
+RM = rm -f
 
-# Compiler and flags
-Compiler = gcc
-CmpFlags = -Wall -Werror -Wextra
+FILES = ft_atoi\
+	ft_bzero\
+	ft_calloc\
+	ft_isalnum\
+	ft_isalpha\
+	ft_isdigit\
+	ft_isprint\
+	ft_itoa\
+	ft_memchr\
+	ft_memcmp\
+	ft_memcpy\
+	ft_memmove\
+	ft_memset\
+	ft_putchar_fd\
+	ft_putendl_fd\
+	ft_putnbr_fd\
+	ft_putstr_fd\
+	ft_split\
+	ft_strchr\
+	ft_strdup\
+	ft_striteri\
+	ft_strjoin\
+	ft_strlcat\
+	ft_strlcpy\
+	ft_strlen\
+	ft_strmapi\
+	ft_strncmp\
+	ft_strnstr\
+	ft_strrchr\
+	ft_strtrim\
+	ft_substr\
+	ft_tolower\
+	ft_toupper
+SRCS_DIR = ./
+SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
 
-# Output name for the static library
-OUTN = $(Library).a
+OBJS_DIR = ./
+OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
 
-# Source files (.c)
-CFILES = $(files:%=%.c)
+.c.o: $(SRCS)
+	$(CC) $(CFLAGS) -c -o $@ $<
 
-# Object files (.o) corresponding to the source files
-OFILES = $(files:%=%.o)
+$(NAME): $(OBJS)
+	$(AR) $@ $^
 
-# Target to create the static library
-$(OUTN): $(OFILES)
-	@ar -rc $(OUTN) $(OFILES)    # Create the static library
+all: $(NAME)
 
-# Rule to compile .c files into .o files
-%.o: %.c
-	@$(Compiler) $(CmpFlags) -c $< -o $@   # Compile each .c into .o
-
-# Default target
-all: $(OUTN)
-
-# Clean object files
 clean:
-	@rm -f $(OFILES)
+	$(RM) $(OBJS)
 
-# Clean everything (object files and the static library)
 fclean: clean
-	@rm -f $(OUTN)
+	$(RM) $(NAME)
 
-# Rebuild everything
-re: fclean all
+re: clean all
 
 .PHONY: all clean fclean re

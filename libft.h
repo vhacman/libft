@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
+# include <limits.h>
 
 int		ft_atoi(const char *str);
 char	*ft_itoa(int n);

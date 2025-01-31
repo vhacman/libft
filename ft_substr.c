@@ -23,15 +23,16 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	char	*sub_str;
 
-	copy_len = len;
-	sub_str = (char *)malloc(copy_len + 1);
 	if (!s)
 		return (NULL);
 	str_len = ft_strlen(s);
 	if (start >= str_len)
-		return ((char *)malloc(1));
+		return (ft_strdup(" "));
 	if (start + len > str_len)
 		copy_len = str_len - start;
+	else
+		copy_len = len;
+	sub_str = (char *)malloc(copy_len + 1);
 	if (!sub_str)
 		return (NULL);
 	i = 0;
