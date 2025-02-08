@@ -1,6 +1,6 @@
 # libft
 ![42 Badge](https://img.shields.io/badge/42-Rome-2BA5DE)
-![Project Score](https://img.shields.io/badge/Score-in_progress-yellow)
+![Project Score](https://img.shields.io/badge/Score-100%2F100-brightgreen)
 
 ## 📝 Description
 This project is your very first project as a student at 42. You will need to recode a few functions of the C standard library as well as some other utility functions that you will use during your whole cursus.
