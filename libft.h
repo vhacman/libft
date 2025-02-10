@@ -18,6 +18,8 @@
 # include <limits.h>
 # include <stddef.h>
 # include <stdint.h>
+# include <stdio.h>
+# include <stdarg.h>
 
 int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
@@ -53,4 +55,12 @@ void	*ft_calloc(size_t number, size_t size);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+int	ft_printf(const char *format, ...);
+int	ft_putchar(char c);
+int	ft_putnbr(int n);
+int	ft_putstr(char *str);
+int	ft_putnbr_unsigned(unsigned int n);
+int	ft_putnbr_hex(unsigned long n, int upper);
+int	ft_putptr(void *ptr);
+int	handle_conversion(char specifier, va_list args);
 #endif

@@ -38,7 +38,10 @@ FILES = ft_atoi\
 	ft_strtrim\
 	ft_substr\
 	ft_tolower\
-	ft_toupper
+	ft_toupper\
+	ft_printf\
+	ft_putnbr_hex\
+	ft_utils
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
 
