@@ -44,9 +44,12 @@ This project is your very first project as a student at 42. You will need to rec
 | ft_strmapi | Create new string from modifying string with specified function |
 | ft_strtrim | Trim beginning and end of string with specified characters |
 | ft_substr | Extract substring from string |
+## FT_PRINTF
 
 ## 🚀 Getting Started
-
+| Function | Description |
+|----------|-------------|
+|ft_printf|This projects impliments `ft_printf`, which is a function in C used to output formatted text to the standard output (usually the console). It allows you to print strings, numbers, and other data types, while controlling their format using format specifiers (e.g., `%d`, `%s`, `%f`).|
 ### Prerequisites
 - GCC compiler
 - Make
