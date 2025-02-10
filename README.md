@@ -50,7 +50,7 @@ This project is your very first project as a student at 42. You will need to rec
 | Function | Description |
 |----------|-------------|
 |ft_printf|This projects impliments `ft_printf`, which is a function in C used to output formatted text to the standard output (usually the console). It allows you to print strings, numbers, and other data types, while controlling their format using format specifiers (e.g., `%d`, `%s`, `%f`).|
-| Function | Description |
+| Helper Function | Description |
 |ft_utils|ft_putchar, ft_putnbr, ft_putnbr_unsigned, ft_putstr, ft_putptr, ft_putnbr_hex|
 ### Prerequisites
 - GCC compiler
