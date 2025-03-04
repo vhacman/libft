@@ -154,9 +154,6 @@ Each function includes comprehensive test cases in comments that can be uncommen
 **vhacman**
 - 42 Intra Profile: [vhacman](https://profile.intra.42.fr/)
 
-## GitHub Stats 📊
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DevGabi98&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=DevGabi98&layout=compact&theme=radical)
 
 ## 📝 License
 This project is licensed under the terms of the 42 School.
