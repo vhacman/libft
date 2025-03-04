@@ -1,8 +1,9 @@
-# 💯🎯 libft 🎯💯
+# 🌟🛡️ libft 🛡️🌟
 ![42 Badge](https://img.shields.io/badge/42-Rome-2BA5DE)
 ![Project Score](https://img.shields.io/badge/Score-100%2F100-brightgreen)
 ![Created](https://img.shields.io/badge/Created-January_2025-blue)
 ![Result](https://img.shields.io/badge/Status-SUCCESS-violet).
+
 ## 📝 Description
 This project is your very first project as a student at 42. You will need to recode a few functions of the C standard library as well as some other utility functions that you will use during your whole cursus.
 
@@ -45,14 +46,32 @@ This project is your very first project as a student at 42. You will need to rec
 | ft_strmapi | Create new string from modifying string with specified function |
 | ft_strtrim | Trim beginning and end of string with specified characters |
 | ft_substr | Extract substring from string |
-## FT_PRINTF
 
-## 🚀 Getting Started
+## 🚀 BONUS
+The bonus part consists of functions to manipulate **linked lists** using the following structure:
+
+```c
+typedef struct s_list
+{
+    void            *content;
+    struct s_list   *next;
+}   t_list;
+```
+
+### Bonus Functions
 | Function | Description |
 |----------|-------------|
-|ft_printf|This projects impliments `ft_printf`, which is a function in C used to output formatted text to the standard output (usually the console). It allows you to print strings, numbers, and other data types, while controlling their format using format specifiers (e.g., `%d`, `%s`, `%f`).|
-| Helper Function | Description |
-|ft_utils|ft_putchar, ft_putnbr, ft_putnbr_unsigned, ft_putstr, ft_putptr, ft_putnbr_hex|
+| ft_lstnew | Create a new list node |
+| ft_lstadd_front | Add node at the beginning of the list |
+| ft_lstsize | Count the number of nodes in the list |
+| ft_lstlast | Get the last node of the list |
+| ft_lstadd_back | Add node at the end of the list |
+| ft_lstdelone | Delete a single node from the list |
+| ft_lstclear | Delete and free an entire list |
+| ft_lstiter | Apply a function to each node of the list |
+| ft_lstmap | Create a new list by applying a function to each node |
+
+## 💪 Getting Started
 ### Prerequisites
 - GCC compiler
 - Make
@@ -63,11 +82,9 @@ git clone <your-repository-url>
 cd libft
 make
 ```
-
-This will create `libft.a` file.
+This will create the `libft.a` file.
 
 ## 💻 Usage
-
 Include the header in your C file:
 ```c
 #include "libft.h"
@@ -105,7 +122,7 @@ int main(void)
 }
 ```
 
-## 📚 Project Structure
+## 💡 Project Structure
 ```
 libft/
 ├── Makefile
@@ -123,8 +140,9 @@ The library comes with a Makefile that contains the following rules:
 - `make clean`: Removes object files
 - `make fclean`: Removes object files and the library
 - `make re`: Recompiles the library
+- `make bonus`: Compiles the bonus part
 
-## 🧪 Testing
+## 🤖 Testing
 Each function includes comprehensive test cases in comments that can be uncommented for testing.
 
 ## 📌 Notes
@@ -135,7 +153,6 @@ Each function includes comprehensive test cases in comments that can be uncommen
 ## 👤 Author
 **vhacman**
 - 42 Intra Profile: [vhacman](https://profile.intra.42.fr/)
-
 
 ## GitHub Stats 📊
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DevGabi98&show_icons=true&theme=radical)

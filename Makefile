@@ -11,8 +11,7 @@ AR = ar rcs
 RM = rm -f
 
 #lista dei file sorgente della libreria(senza estensione)
-FILES = \
-	ft_atoi ft_bzero ft_calloc ft_isalnum ft_isalpha ft_isdigit\
+FILES =	ft_atoi ft_bzero ft_calloc ft_isalnum ft_isalpha ft_isdigit\
 	ft_isprint ft_isascii ft_itoa ft_memchr ft_memcmp\
 	ft_memcpy ft_memmove ft_memset ft_putchar_fd ft_putendl_fd\
 	ft_putnbr_fd ft_putstr_fd ft_split ft_strchr ft_strdup\
@@ -21,16 +20,13 @@ FILES = \
 	ft_substr ft_tolower ft_toupper\
 
 #lista dei file bonus della libreria (senza estensione)
-BOBUS_FILES = \
-			ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast\
+BONUS_FILES = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast\
 			ft_lstadd_back ft_lstdelone ft_lstclear\
 			ft_lstiter ft_lstmap
 
-SRCS_DIR = ./ #directory dei file sorgente 
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES))) #percorsi completi dei file sorgente
 BONUS_SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(BONUS_FILES))) #percorsi completi dei file bonus
 
-OBJS_DIR = ./ #directory degli oggetti compilati
 OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES))) #percorsi completi degli oggetti
 BONUS_OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(BONUS_FILES))) #percorsi completi degli oggetti bonus
 
@@ -46,8 +42,9 @@ bonus: $(OBJS) $(BONUS_OBJS)
 	$(AR) $(NAME) $(OBJS) $(BONUS_OBJS)
 
 #regola generica per compilare un file sorgente in un file oggetto
-%.o: %.c
+$(OBJS_DIR)%.o: $(SRCS_DIR)%.c
 	$(CC) $(CFLAGS) -c $< -o $@
+
 
 #regola per pulire file oggetto
 clean:
