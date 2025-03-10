@@ -6,12 +6,14 @@
 /*   By: vhacman <vhacman@student.42roma.it>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 20:10:31 by vhacman           #+#    #+#             */
-/*   Updated: 2025/01/31 12:38:49 by vhacman          ###   ########.fr       */
+/*   Updated: 2025/03/10 11:41:41 by vhacman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*	Questa funzione serve per gestire gli spazi iniziali e il segno (+ o -) 
+all'inizio della stringa prima di passare alla conversione del 
+numero vero e proprio.*/
 static int	ft_handle_sign_and_spaces(const char *str, int *i)
 {
 	int	sign;
