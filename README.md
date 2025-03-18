@@ -6,7 +6,8 @@
 ![Result](https://img.shields.io/badge/Status-SUCCESS-violet)
 
 ## 📝 Description
-Questo progetto è il tuo primo step come studentə presso 42. Include la riscrittura di alcune funzioni della libreria standard del C, alcune funzioni di utilità e l’**integrazione** di progetti come **ft_printf** e **get_next_line** in un’unica libreria statica (`libft.a`).
+Questo progetto è il tuo primo passo come studentə presso 42. Nasce come riscrittura di alcune funzioni base della libreria standard del C e di altre funzioni di utilità, per creare la libft.
+In un secondo momento, sono stati aggiunti ft_printf e get_next_line, anch’essi progetti 42, integrandoli nella stessa libreria statica (libft.a). In questo modo si ha una “super libreria” riutilizzabile in altri progetti.
 
 ## 🛠️ Function List
 
