@@ -1,6 +1,3 @@
-Di seguito trovi un README **aggiornato** per la tua **libft** con l’aggiunta di **ft_printf** e **get_next_line** (incluse le versioni bonus). Mantiene lo stile e la struttura del precedente, aggiungendo le nuove funzionalità e spiegando come utilizzarle.
-
----
 
 # 🌟🛡️ libft 🛡️🌟
 ![42 Badge](https://img.shields.io/badge/42-Rome-2BA5DE)
