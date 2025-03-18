@@ -199,6 +199,3 @@ libft/
 Questo progetto è rilasciato secondo i termini della 42 School.  
 Ogni modifica e/o riutilizzo del codice deve rispettare le regole di 42.
 
----
-
-Buon divertimento con la tua libreria potenziata! Ora hai **libft**, **ft_printf** e **get_next_line** (anche in versione bonus) in un unico package.
