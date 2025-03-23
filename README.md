@@ -50,21 +50,6 @@ In un secondo momento, sono stati aggiunti ft_printf e get_next_line, anch’ess
 | ft_substr      | Extract substring from string                               |
 
 ---
-
-## 🖨️ ft_printf
-- **ft_printf** è stato unito alla libreria: fornisce la funzionalità di stampa formattata (come `printf` standard).
-- Include funzioni di supporto, come `ft_printf_utils.c`, per la gestione di vari tipi di formattazione (`%s`, `%d`, `%x`, ecc.).
-
----
-
-## 📜 get_next_line
-- **get_next_line** (GNL) è ora incluso nella libreria. Permette di leggere linee da un file descriptor (incluso `0` per stdin) una alla volta.
-- File principali:
-  - `get_next_line.c` e `get_next_line_utils.c` per la versione base.
-  - `get_next_line_bonus.c` e `get_next_line_utils_bonus.c` per la versione bonus (per gestire più file descriptor contemporaneamente).
-
----
-
 ## 🚀 BONUS
 ### Bonus Linked-List Functions
 Il bonus di **libft** consiste in funzioni per manipolare **liste concatenate** con la struttura:
@@ -86,11 +71,6 @@ typedef struct s_list
 | ft_lstclear     | Delete and free an entire list                |
 | ft_lstiter      | Apply a function to each node of the list     |
 | ft_lstmap       | Create a new list applying a function to each node |
-
-### Bonus get_next_line
-- **get_next_line** bonus (`get_next_line_bonus.c`, `get_next_line_utils_bonus.c`) supporta la lettura *simultanea* da più file descriptor.
-
----
 
 ## 💪 Getting Started
 ### Prerequisites
