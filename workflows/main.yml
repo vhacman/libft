@@ -11,17 +11,17 @@
 # **************************************************************************** #
 name: Libft CI
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Compile with Makefile
-      run: make
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🛠️ Compile Libft
+        run: make
+
+      - name: 🧹 Clean up
+        run: make fclean
