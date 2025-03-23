@@ -1,4 +1,27 @@
-name: Libft CI
+# ===============================================================
+# 📄 GitHub Actions Workflow - Libft 
+#
+# Questo file definisce un workflow di GitHub Actions chiamato
+# "Libft CI", che automatizza la compilazione del progetto libft.
+#
+# 🔁 Si attiva automaticamente quando:
+#   - Viene eseguito un push sul repository
+#   - Viene aperta una pull request
+#
+# 🧪 Cosa fa questo workflow:
+#   1. Clona il repository sul runner GitHub
+#   2. Compila il progetto con `make`
+#   3. Pulisce i file compilati con `make fclean`
+#
+# ✅ Obiettivo:
+#   Garantire che il codice si compili correttamente ad ogni modifica,
+#   mantenendo il progetto stabile e pronto all’uso.
+#
+# ⚙️ Requisiti:
+#   - Un Makefile funzionante nella root del progetto
+#   - Directory `.github/workflows/` con questo file dentro
+# ===============================================================
+name: Libft
 
 on:
   push:
