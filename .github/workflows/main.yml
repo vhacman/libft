@@ -1,4 +1,4 @@
-name: Libft CI
+name: Libft
 
 on: [push, pull_request]
 
