@@ -1,14 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    main.yml                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: vhacman <vhacman@student.42roma.it>        +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/03/23 15:04:13 by vhacman           #+#    #+#              #
-#    Updated: 2025/03/23 15:04:13 by vhacman          ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
 name: Libft CI
 
 on: [push, pull_request]
@@ -20,8 +9,8 @@ jobs:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
-      - name: 🛠️ Compile Libft
+      - name: 🧱 Build project using Makefile
         run: make
 
-      - name: 🧹 Clean up
+      - name: 🧹 Clean project
         run: make fclean
