@@ -13,6 +13,10 @@
 #include "libft.h"
 
 //function that creates a newnode
+// si definisce un puntatore a new_node ovvero il nuovo nodo della lista
+//Il campo content del nuovo nodo viene impostato con il valore passato 
+//come parametro alla funzione.
+//Viene impostato il puntatore al nodo successivo --> new_node->next = NULL
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_node;
