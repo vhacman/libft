@@ -1,5 +1,4 @@
-
-# 🌟🛡️ libft 🛡️🌟
+Libft
 ![42 Badge](https://img.shields.io/badge/42-Rome-2BA5DE)
 ![Project Score](https://img.shields.io/badge/Score-100%2F100-brightgreen)
 ![Created](https://img.shields.io/badge/Created-January_2025-blue)
