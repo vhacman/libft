@@ -31,8 +31,8 @@ git clone https://github.com/<il-tuo-username>/<nome-repo>.git
 ![Result](https://img.shields.io/badge/Status-SUCCESS-violet)
 
 ## 📝 Description
-Questo progetto è il tuo primo passo come studentə presso 42.  
-Consiste nella riscrittura di alcune funzioni fondamentali della libreria standard C (`libc`) e l’aggiunta di alcune funzioni di utilità.  
+Questo progetto è il tuo primo passo come studentə presso 42.
+Consiste nella riscrittura di alcune funzioni fondamentali della libreria standard C (`libc`) e l’aggiunta di alcune funzioni di utilità.
 Tutte le funzioni sono raccolte in una libreria statica riutilizzabile: **libft.a**.
 
 ## 🛠️ Function List
@@ -74,10 +74,12 @@ Tutte le funzioni sono raccolte in una libreria statica riutilizzabile: **libft.
 | ft_strmapi     | Create new string from modifying string with specified func |
 | ft_strtrim     | Trim beginning and end of string with specified characters  |
 | ft_substr      | Extract substring from string                               |
+| ft_printf      | printf behaviour                                            |
+| get_next_line  | Reads from a file descriptor                                |
 
 ## 🚀 BONUS
 
-### Bonus Linked-List Functions  
+### Bonus Linked-List Functions
 Il bonus consiste nell'implementazione di funzioni per la manipolazione di **liste concatenate** tramite la seguente struttura:
 
 ```c
@@ -153,9 +155,9 @@ libft/
 - Memoria sempre gestita con `malloc`/`free` dove necessario
 
 ## 👤 Author
-**vhacman**  
+**vhacman**
 - 42 Intra Profile: [vhacman](https://profile.intra.42.fr/)
 
 ## 📝 License
-Questo progetto è rilasciato secondo i termini della 42 School.  
+Questo progetto è rilasciato secondo i termini della 42 School.
 Ogni modifica e/o riutilizzo del codice deve rispettare le regole di 42.

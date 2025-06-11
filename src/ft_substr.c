@@ -9,13 +9,12 @@
 /*   Updated: 2025/01/31 14:12:50 by vhacman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
+
 /*Used to extract a substring from a given string.
 s: The string from which the substring will be created.
 start: The starting index of the substring.
 len: The maximum length of the substring.*/
-
-#include "libft.h"
-
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	copy_len;

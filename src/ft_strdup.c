@@ -9,41 +9,30 @@
 /*   Updated: 2025/01/30 20:15:23 by vhacman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*This function duplicates a string, verifying the source, allocating memory, 
-copying the content, and returning a pointer to the new string. 
-If memory allocation fails or the source is null, it returns NULL. 
-Called “ft_strdup,” it uses ft_strlen and ft_strcpy.*/
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, const char *src)
-{
-	int	i;
-
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
-}
-
+/*This function duplicates a string, verifying the source, allocating memory,
+copying the content, and returning a pointer to the new string.
+If memory allocation fails or the source is null, it returns NULL.
+Called “ft_strdup,” it uses ft_strlen and ft_strcpy.*/
 char	*ft_strdup(const char *s1)
 {
-	char	*s2;
 	size_t	len;
+	char	*dup;
+	size_t	i;
 
-	if (!s1)
-		return (NULL);
 	len = ft_strlen(s1);
-	if (len + 1 == 0)
+	i = 0;
+	dup = malloc(len + 1);
+	if (!dup)
 		return (NULL);
-	s2 = (char *)malloc(sizeof(char) * (len + 1));
-	if (!s2)
-		return (NULL);
-	ft_strcpy(s2, s1);
-	return (s2);
+	while (i < len)
+	{
+		dup[i] = s1[i];
+		i++;
+	}
+	dup[i] = '\0';
+	return (dup);
 }
 /*
 int	main(void)

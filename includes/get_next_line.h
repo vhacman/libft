@@ -33,24 +33,9 @@
 #  define BUFFER_SIZE 42
 # endif
 
-typedef struct s_buffer_info
-{
-	char	*end; //puntatore a '\n'
-	char	*remainder; // puntatore a dati rimanenti dopo '\n'
-	char	*raw_input; // puntatore al puntatore che gestisce il buffer
-	char	**raw_input_ptr; // puntatore al buffer che gestisce i dati grezzi
-}	t_buffer_info;
-
 char		*get_next_line(int fd);
-char		*get_next_line_reader(int fd, char *raw_input_data);
+char		*read_to_buffer(int fd, char *buffer);
 char		*extract_line(char **raw_input_ptr);
-void		extract_line_helper(t_buffer_info data, char *line);
-// size_t		ft_strlen(const char *str);
-// char		*ft_strchr(const char *str, int c);
-// char		*ft_strdup(const char *s1);
-// char		*ft_strjoin(char const *string_1, char const *string_2);
-// char		*ft_strncpy(char *dest, const char *src, unsigned int n);
-char		*read_and_update(int fd, char *raw_input_data);
 
 //int			main(void);
 

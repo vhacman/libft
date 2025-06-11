@@ -20,7 +20,7 @@ OBJS        = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRCS))
 # **************************************************************************** #
 
 all: $(NAME)
-	@echo "📦 Building libft..."
+	@echo "📦 Libft... Built"
 
 $(NAME): $(OBJS)
 	@$(AR) $@ $^
