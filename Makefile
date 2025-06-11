@@ -20,7 +20,7 @@ OBJS        = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(SRCS))
 # **************************************************************************** #
 
 all: $(NAME)
-	@echo "\n(╯°□°）╯︵ ┻━┻  𝓛𝓲𝓫𝓯𝓽 compiled and summoned. Prepare for reuse. ⚔️)\n"
+	@echo "📦 Building libft..."
 
 $(NAME): $(OBJS)
 	@$(AR) $@ $^
@@ -39,6 +39,5 @@ fclean: clean
 
 re: fclean all
 	@echo "🔁 Libft reborn. Recompiled from ashes."
-
 
 .PHONY: all clean fclean re

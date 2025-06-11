@@ -13,14 +13,18 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
-# include <stdbool.h>
-# include <unistd.h>
 # include <limits.h>
 # include <stddef.h>
 # include <stdint.h>
+# include <unistd.h>
+# include <string.h>
+# include <stdbool.h>
 # include <stdio.h>
 # include <stdarg.h>
-# include <string.h>
+
+# define PTR_LONG_MIN 0x8000000000000000
+# define PTR_LONG_MAX 0x7fffffffffffffff
+# define PTR_MINUS_ULONG_MAX ULONG_MAX
 
 typedef struct s_list
 {
@@ -29,6 +33,7 @@ typedef struct s_list
 }					t_list;
 
 int		ft_atoi(const char *str);
+long	ft_atol(const char *str);
 char	*ft_itoa(int n);
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int c);
@@ -71,4 +76,19 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+int		ft_putchar(char c);
+char	*ft_strncpy(char *dest, char *src, size_t n);
+void	ft_putendl(char	*s);
+char	*ft_strstr(char *str, char *to_find);
+char	*ft_strncat(char *dest, char *src, size_t nb);
+char	*ft_strcat(char *s1, const char *s2);
+int		ft_putnbr(int n);
+int		ft_strcmp(const char *s1, const char *s2);
+char	*ft_strcpy(char *dest, const char *src);
+int		ft_putstr(char *str);
+int		ft_putnbr_unsigned(unsigned int n);
+int		ft_putptr(void *ptr);
+int		ft_putnbr_hex(unsigned long n, int upper);
+int		ft_printf(const char *format, ...);
+int		handle_conversion(char specifier, va_list args);
 #endif

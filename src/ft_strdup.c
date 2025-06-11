@@ -15,7 +15,7 @@ If memory allocation fails or the source is null, it returns NULL.
 Called “ft_strdup,” it uses ft_strlen and ft_strcpy.*/
 #include "libft.h"
 
-static char	*ft_strcpy(char *dest, const char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	int	i;
 
