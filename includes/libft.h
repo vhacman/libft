@@ -91,4 +91,5 @@ int		ft_putptr(void *ptr);
 int		ft_putnbr_hex(unsigned long n, int upper);
 int		ft_printf(const char *format, ...);
 int		handle_conversion(char specifier, va_list args);
+int		is_number(char *str);
 #endif
