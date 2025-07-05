@@ -1,9 +1,13 @@
 # Libft
-[![Libft](https://github.com/vhacman/libft/actions/workflows/main.yml/badge.svg)](https://github.com/vhacman/libft/actions/workflows/main.yml)
-![42 Badge](https://img.shields.io/badge/42-Rome-2BA5DE)
-![Project Score](https://img.shields.io/badge/Score-100%2F100-brightgreen)
-![Created](https://img.shields.io/badge/Created-January_2025-blue)
-![Result](https://img.shields.io/badge/Status-SUCCESS-violet)
+
+![Score](https://img.shields.io/badge/Score-122/100-brightgreen?style=for-the-badge)
+[![42 Project](https://img.shields.io/badge/42%20Project-so_long-blue?style=for-the-badge&logo=42)](https://github.com/vhacman/libft)
+[![C Language](https://img.shields.io/badge/Made%20with-C-00599C?style=for-the-badge&logo=c)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Norminette Approved](https://img.shields.io/badge/Norminette-OK-brightgreen?style=for-the-badge)](https://github.com/42School/norminette)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Unix-violet?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/license-42%20Project-informational?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/42%20status-Completed-brightgreen?style=for-the-badge)]()
+[![Created](https://img.shields.io/badge/Created-January_2025-blue?style=for-the-badge)]()
 
 ## 📝 Description
 Questo progetto è il tuo primo passo come studentə presso 42.
